@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+
+    */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+      .main {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 320px 420px;
+        grid-template-rows: 414px 325px;
+        background-color: #f0f1ec;
+        grid-auto-rows: 20px;
+      }
+      .square1 {
+        background-color: #e72f24;
+        border-right: 9px black solid;
+        border-bottom: 9px black solid;
+      }
+      .square2 {
+        border-bottom: black solid 9px;
+      }
+      .square3 {
+        border-right: 9px solid black;
+        display: grid;
+        grid-template-rows: 305px 20px;
+      }
+      .square4 {
+        display: grid;
+        grid-template-rows: 305px 20px;
+        grid-template-columns: 360px 59px;
+      }
+      .square5 {
+        border-bottom: black solid 9px;
+      }
+      .square6 {
+        border-bottom: black 9px solid;
+        border-right: black 9px solid;
+      }
+      .container2 {
+        display: grid;
+        border-right: black solid 9px;
+        grid-template-columns: 198px 153px;
+      }
+      .container1 {
+        display: grid;
+        grid-template-rows: 130px 184px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main box">
+      <div class="box square1"></div>
+      <div class="box square2"></div>
+      <div class="box square3">
+        <div class="box square5"></div>
+        <div class="box"></div>
+      </div>
+      <div class="box square4">
+        <div class="box square6"></div>
+        <div class="box container1">
+          <div
+            class="box"
+            style="background-color: #004592; border-bottom: 20px black solid"
+          ></div>
+          <div class="box"></div>
+        </div>
+        <div class="box container2">
+          <div
+            class="box"
+            style="background-color: #f9d01e; border-right: black 9px solid"
+          ></div>
+          <div class="box" style="background-color: #232629"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
